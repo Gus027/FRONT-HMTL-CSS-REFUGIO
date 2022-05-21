@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+<body>
+  <div class="header">
+<h2 style="font-style: italic">Juntos somos mais fortes</h2>
+<p style="font-style: italic">Разом ми сильніші, разом ми непереможні</p>
+</div>
+
+<div class="topnav">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contato</a>
+  <a href="#"><i class="fa fa-fw fa-address-card"></i> Sobre</a>
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit" ><i class="fa fa-fw fa-user"></i>Login</button>
+    </form>
+</div>
+  </div>
+  <!--Div's onde adiciono as colunas/bordas-->
+  <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+ <h3 style="font-style: italic">O QUE BUSCAMOS:</h3>
+      <p>Após meses de expectativa e tensão, a Rússia deu início à invasão da Ucrânia na quinta-feira do dia (24/02). Nesta plataforma buscamos um incentivo de ajudar, e da suporte as mulheres Ucranianas com familias e filhos (as), onde buscam um refugio para sair do meio de conflitos em seu país natal.</p>
+     <p>A região de Donbas, no leste ucraniano, é apontada como o foco atual das operações militares russas, à medida que estas recuam da região norte. Na madrugada desta sexta-feira (8/4), cidades em Donbas foram alvo de fortes bombardeios, forçando moradores a se abrigar em porões.
+
+Acredita-se que mais de dez milhões de pessoas já tenham sido forçadas a abandonar suas casas na Ucrânia por causa da invasão russa, segundo a Organização das Nações Unidas (ONU).</p>
+      <img src="img/ucra.jpg" alt="ucrain" style="height:430px;">
+    </div>
+    <div class="card">
+<h3 style="font-style: italic">COMO POSSO AJUDAR?</h3>
+    <!--Perguntar ao professor como deixar em diferentes formatos a img...-->
+<p style="font-style: italic">Alem de moradias, buscamos auxiliar aos refugiados com algumas melhorias nesses momentos tão dificeis, alias, não estamos sozinhos nessa. </p>
+<p style="font-style: italic">Nessa missão, buscamos arrecadar 100k em cestas básicas para familias de refugiados, que necessitam de alimentos, e nessa tarefa você pode está ajudando com alguns desses alimentos para cada familia. </p>
+      <img src="img/cesta.jpg" alt="cesta" style="height:330px;">
+      <img src="img/ces.jpg" alt="xes" style="height:330px;">
+    
+     <p><button class="button">Ajudar</button></p> 
+      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="font-style: italic">HOUSINGS:</h2>
+      <h4 style="font-style: italic"><b>Familia Gomes Zoller</b></h4>
+      <img src="img/moderna.jpg" alt="casa" style="height:320px;">
+ <p><b style="font-style: italic">Address:</b> Ilha do boi, Vitoria-ES</p>
+<p><b style="font-style: italic">House:</b> 2 guest rooms</p>
+<p><b style="font-style: italic">About the family:</b> 3 children and 1 couple</p>
+      <p><b style="font-style: italic">Accept:</b> 1 couple and 2 children</p>
+ <p><b style="font-style: italic">owner:</b> Gustavo Gomes Z.</p>
+   <button class="button">Candidatar</button>
+      <h4 style="font-style: italic"><b>Familia Venturim</b></h4>
+      <img src="img/man.jpg" alt="man" style="height:300px;">
+      <p><b style="font-style: italic">Address:</b> Itápema,Balneário Camboriú-SC </p>
+<p><b style="font-style: italic">House:</b> 3 guest rooms</p>
+<p><b style="font-style: italic">About the family:</b> 1 children and 1 couple</p>
+      <p><b style="font-style: italic">Accept:</b> 1 couple and 3 children</p>
+ <p><b style="font-style: italic">owner:</b> Ricardo Venturim</p>
+      <button class="button">Candidatar</button>
+    </div>
+    <!--RESGISTRO JS-->
+    <div class="card">
+      <h4 style="font-style: italic">Faça o seu cadastro para ficar por dentro de nossas ações, e nos ajude a mudar o mundo.</h4>
+      <h3 >REGISTRA-SE:</h3>
+<form method="POST" action="registro" onsubmit="return validarSenha()" name="formulario">
+           <div class="form-group">
+              <div class="form-row">
+                 <div class="col-md-6">
+                    <label for="primeiroNome" style="font-style: italic">Primeiro nome:</label>
+                    <p><input type="text" class="form-control" id="primeiroNome" name="primeiroNome" placeholder="Digite seu primeiro nome" required="required"></p> 
+                 </div>
+                 <div class="col-md-6">
+                    <label for="Sobrenome" style="font-style: italic">Sobrenome:</label>
+                    <p><input type="text" class="form-control" id="Sobrenome" name="sobrenome" placeholder="Digite seu Sobrenome" required="required" autofocus="autofocus"></p> 
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-6" id="matricula">
+              <label for="primeiroNome" style="font-style: italic">CPF:</label>
+              <p><input type="text" class="form-control"  name="matricula" placeholder="Digite sua matrícula" required="required" autofocus="autofocus"></p> 
+           </div>
+           <div class="form-group">
+              <label for="email" style="font-style: italic">E-mail:</label>
+              <p><input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required="required" autofocus="autofocus"></p> 
+           </div>
+           <div class="form-group">
+              <div class="form-row">
+                 <div class="col-md-6">
+                    <label for="senha" style="font-style: italic">Senha:</label>
+                    <p><input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required="required" autofocus="autofocus"></p> 
+                 </div>
+                 <div class="col-md-6">
+                    <label for="confirma_senha" style="font-style: italic">confirmar senha:</label>
+                   <p><input type="password"  class="form-control" id="confirmaSenha" name="confirma_senha" placeholder="Confirme sua senha" required="required" autofocus="autofocus"></p> 
+                 </div>
+              </div>
+           </div>
+           <div>
+             <p><input type="submit"   onsubmit="return validarSenha()" class="btn btn-primary btn-block" value="Registra-se"/><i class="fa fa-fw fa-user"></i></p> 
+           </div>
+        </form>
+    </div>
+    <!--/RESGISTRO js-->
+  </div>
+</div>
+<div class="footer">
+  <h4>Gustavo Gomes Web © 2022 | Informações Legais</h4>
+</div>
+  <script src="script.js"></script>
+</body>
+</html> 
